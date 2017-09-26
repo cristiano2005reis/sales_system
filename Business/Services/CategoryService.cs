@@ -1,9 +1,11 @@
 ﻿using System;
+using Business.Entities;
+
 namespace Business.Services
 {
-    public class CategoryService
+    public class CategoryService:GenericService<Category>
     {
-        public CategoryService()
+        public CategoryService():base(new Repositories.CategoryRepository())
         {
         }
     }

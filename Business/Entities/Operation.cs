@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace Business.Entities
 {
-    public class Operation
+    public class Operation:Generic
     {
+        public long OperationId { get; set; }
+        public Int16 OperationNature { get; set; }
+        public Decimal Value { get; set; }
+        public long Quantity { get; set; }
     }
 }

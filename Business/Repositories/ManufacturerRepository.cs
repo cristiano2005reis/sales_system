@@ -1,9 +1,11 @@
 ﻿using System;
+using Business.Entities;
+
 namespace Business.Repositories
 {
-    public class ManufacturerRepository
+    public class ManufacturerRepository:GenericRepository<Manufacturer>
     {
-        public ManufacturerRepository()
+        public ManufacturerRepository():base(new Contexts.GenericContext())
         {
         }
     }

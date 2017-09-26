@@ -1,9 +1,11 @@
 ﻿using System;
+using Business.Entities;
+
 namespace Business.Services
 {
-    public class ManufacturerService
+    public class ManufacturerService:GenericService<Manufacturer>
     {
-        public ManufacturerService()
+        public ManufacturerService():base(new Repositories.ManufacturerRepository())
         {
         }
     }
